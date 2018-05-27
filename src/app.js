@@ -60,6 +60,13 @@ ReactDOM.render(
 			<Comment name={molly}/>
 			<Comment name={matthew}/>
 		</div>
+		<CommentDate day="昨天"></CommentDate>
+		<div className="content">
+			<Comment name={elyse} inner={[{molly}]}/>
+			<Comment name={elyse} inner={[{matthew}]}/>
+			<Comment name={molly}/>
+			<Comment name={matthew}/>
+		</div>
 	</div>,
 	document.getElementById('root')
 );
