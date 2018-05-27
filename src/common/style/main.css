@@ -1,0 +1,39 @@
+.comments {
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid #eee;
+}
+.comments header {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 35px;
+  border-bottom: 1px solid #ccc;
+}
+.comments .content {
+  padding: 20px 20px 20px 0;
+}
+.comments .content .item {
+  margin-left: 30px;
+  font-size: 14px;
+}
+.comments .content .item .img {
+  display: inline-block;
+  vertical-align: top;
+}
+.comments .content .item .img img {
+  width: 30px;
+  height: 30px;
+}
+.comments .content .item .commentInfo {
+  display: inline-block;
+  margin-top: -5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.comments .content .item .reply {
+  font-size: 12px;
+  color: #ccc;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+}
