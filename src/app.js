@@ -13,12 +13,11 @@ function isInner(i) {
 		if (!i.length) {
 			return null;
 		} else {
-			// let _i = i.slice(1)
 			let name = Object.values(i[0])[0]
+			i.shift()
 			return (
-				<Comment name={name}/>
+				<Comment name={name} inner={i}/>
 			)
-			// isInner(_i)
 		}
 	}
 }
@@ -55,15 +54,15 @@ ReactDOM.render(
 		<header>Comments</header>
 		<CommentDate day="今天"></CommentDate>
 		<div className="content">
-			<Comment name={elyse} inner={[{molly}]}/>
-			<Comment name={elyse} inner={[{matthew}]}/>
+			<Comment name={elyse} inner={[{molly},{matthew},{matthew}]}/>
+			{/* <Comment name={elyse} inner={[{matthew}]}/> */}
 			<Comment name={molly}/>
 			<Comment name={matthew}/>
 		</div>
 		<CommentDate day="昨天"></CommentDate>
 		<div className="content">
-			<Comment name={elyse} inner={[{molly}]}/>
-			<Comment name={elyse} inner={[{matthew}]}/>
+			{/* <Comment name={elyse} inner={[{molly}]}/>
+			<Comment name={elyse} inner={[{matthew}]}/> */}
 			<Comment name={molly}/>
 			<Comment name={matthew}/>
 		</div>
